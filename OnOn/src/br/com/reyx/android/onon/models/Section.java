@@ -9,6 +9,11 @@ import org.simpleframework.xml.Root;
 @Root
 public class Section {
 	
+	public static String ID = "SectionId";
+	public static String NAME = "SectionName";
+	public static String COLOR = "SectionColor";
+	public static String IMAGE = "SectionImage";
+	
 	@Attribute
     private String name;
 
@@ -18,13 +23,13 @@ public class Section {
     @Attribute
     private String image;
 
-    @ElementList(inline=true, name="item")
+    @ElementList(name="item", inline=true)
     private List<Page> pages;
     
     public Section(@Attribute(name="name") String name, 
     		@Attribute(name="color") String color, 
     		@Attribute(name="image") String image,
-    		@ElementList(name="pages") List<Page> pages) 
+    		@ElementList(name="item", inline=true) List<Page> pages) 
 	{
 	   this.color = color;
 	   this.name = name;

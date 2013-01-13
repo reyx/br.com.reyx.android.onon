@@ -9,5 +9,6 @@
 			<attribute name="javadoc_location" value="file:/C:/Users/regis.silva/Downloads/simple-xml-2.6.9/simple-xml-2.6.9/javadoc"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="libs/YouTubeAndroidPlayerApi.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

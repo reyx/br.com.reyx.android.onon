@@ -6,86 +6,33 @@ import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
-import org.simpleframework.xml.Text;
 
 @Root(name="item")
 public class Issue {
 	
-	// @Element
-    // private Info info;
+	public static final String ID = "IssueId";
+	public static final String FEATURED = "IssueImage";
+	public static final String TITLE = "IssueTitle";
+	
+	@Element(name="info")
+    private Info info;    
 
-    @Attribute
-    private int id;
-
-	@Attribute
-    private String title;
+    @ElementList(name="sections")
+    private List<Section> sections;
     
-    @Text(required=false)
-    private String subtitle;
-    
-    @Attribute
-    private String image;
-    
-    @Attribute
-    private String type;
-    
-    @Attribute(name="min-version")
-    private String minVersion;
-
-    //@ElementList
-    //private List<Section> sections;
-    
-    public Issue(
-    		//@Element(name="info") Info info,
-    		@Attribute(name="id") int id,
-    		@Attribute(name="title") String title,
-    		@Text String subtitle,
-    		@Attribute(name="image") String image, 
-    		@Attribute(name="type") String type,
-    		@Attribute(name="min-version") String minVersion
-    		//, @ElementList(name="sections") List<Section> sections
-    		) 
-	{
-	   //this.info = info;
-	   this.id = id;
-	   this.title = title;
-	   this.subtitle = subtitle;
-	   this.image = image;
-	   this.type = type;
-	   this.minVersion = minVersion;
-	   //this.sections = sections;
+    public Issue (
+    		@Element(name="info") Info info,
+    		@ElementList(name="sections") List<Section> sections) {
+	   this.info = info;
+	   this.sections = sections;
 	}
     
-    //public Info getInfo() {
-		//return info;
-	//}
-
-	public int getId() {
-		return id;
+    public Info getInfo() {
+		return info;
 	}
 
-	public String getTitle() {
-		return title;
+	public List<Section> getSections() {
+		return sections;
 	}
-
-	public String getSubtitle() {
-		return subtitle;
-	}
-
-	public String getImage() {
-		return image;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public String getMinVersion() {
-		return minVersion;
-	}
-
-	//public List<Section> getSections() {
-		//return sections;
-	//}
 
 }

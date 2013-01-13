@@ -8,13 +8,13 @@ import org.simpleframework.xml.Root;
 @Root
 public class Home {
 	@ElementList(name="issues")
-    private List<Issue> issues;
+    private List<HomeIssue> issues;
 	
-	public Home(@ElementList(name="issues") List<Issue> issues) {
+	public Home(@ElementList(name="issues") List<HomeIssue> issues) {
 		this.issues = issues;
 	}
 
-	public List<Issue> getIssues() {
+	public List<HomeIssue> getIssues() {
 		return issues;
 	}
 }
