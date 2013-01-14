@@ -8,5 +8,6 @@
     <string name="xml_error">Xml Error</string>
     <string name="title_activity_video">VideoActivity</string>
     <string name="title_activity_issue">IssueActivity</string>
+    <string name="title_activity_you_tube_failure_recovery">YouTubeFailureRecoveryActivity</string>
 
 </resources>

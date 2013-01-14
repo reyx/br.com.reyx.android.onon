@@ -19,20 +19,29 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="br.com.reyx.android.onon.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="br.com.reyx.android.onon.VideoActivity"
-            android:label="@string/title_activity_video" >
+            android:label="@string/title_activity_video"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="br.com.reyx.android.onon.IssueActivity"
-            android:label="@string/title_activity_issue" >
+            android:label="@string/title_activity_issue"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="br.com.reyx.android.onon.YouTubeFailureRecoveryActivity"
+            android:label="@string/title_activity_you_tube_failure_recovery">
         </activity>
     </application>
 

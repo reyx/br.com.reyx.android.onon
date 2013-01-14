@@ -14,18 +14,16 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int imageViewPauseIndicator=0x7f070009;
         public static final int issueFeatured=0x7f070002;
         public static final int issueSubtitle=0x7f070004;
         public static final int issueTitle=0x7f070003;
-        public static final int menu_settings=0x7f07000b;
+        public static final int menu_settings=0x7f070009;
         public static final int pager=0x7f070001;
-        public static final int progressBarWait=0x7f07000a;
+        public static final int player=0x7f070008;
         public static final int sectionFragment=0x7f070005;
         public static final int sectionImage=0x7f070006;
         public static final int sectionName=0x7f070007;
         public static final int sectionPager=0x7f070000;
-        public static final int surfaceViewFrame=0x7f070008;
     }
     public static final class layout {
         public static final int activity_issue=0x7f030000;
@@ -38,6 +36,7 @@ public final class R {
         public static final int activity_issue=0x7f060000;
         public static final int activity_main=0x7f060001;
         public static final int activity_video=0x7f060002;
+        public static final int activity_you_tube_failure_recovery=0x7f060003;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
@@ -46,6 +45,7 @@ public final class R {
         public static final int menu_settings=0x7f040002;
         public static final int title_activity_issue=0x7f040006;
         public static final int title_activity_video=0x7f040005;
+        public static final int title_activity_you_tube_failure_recovery=0x7f040007;
         public static final int xml_error=0x7f040004;
     }
     public static final class style {
